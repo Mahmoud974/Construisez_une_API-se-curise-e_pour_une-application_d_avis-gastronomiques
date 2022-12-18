@@ -1,0 +1,121 @@
+.about {
+  max-width: 1240px;
+    .bannerImgDefault {
+    @include bannerImg(220px, '../img/paysage.png');
+}
+
+    margin: auto;
+    position: relative;
+
+    h1 {
+    position: relative;
+    z-index: 2;
+    }
+
+    .collapse {
+        background: $red;
+        color: $white;
+        font-size: 12px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    .fa-solid {
+        font-size: 3em;
+        cursor: pointer;
+        }
+    }
+}
+
+//1024px
+@media(min-width: $laptop) {
+
+    .about .boxAbout .list-cards .card .collapse h1,
+    .about .boxAbout .list-cards .card .collapse i {
+        font-size: 20px;
+    }
+
+    .about .boxAbout .list-cards .card p {
+        font-size: 20px;
+    }
+
+    .about .boxAbout .list-cards {
+        width: 800px;
+        margin-top: 20px;
+    }
+}
+
+//1440px
+@media(min-width: $laptopL) {
+
+    .about .boxAbout .list-cards .card .collapse h1,
+    .about .boxAbout .list-cards .card .collapse i {
+        font-size: 24px;
+    }
+
+    .about .boxAbout .list-cards .card p {
+        font-size: 24px;
+    }
+
+    .about .boxAbout .list-cards {
+        width: 1024px;
+        margin-top: 20px;
+    }
+}
+
+//768px
+@media(min-width: $tablet) {
+
+    .about .boxAbout .list-cards .card .collapse h1,
+    .about .boxAbout .list-cards .card .collapse i {
+        font-size: 20px;
+    }
+
+    .about .boxAbout .list-cards .card p {
+        font-size: 20px;
+    }
+
+   
+}
+
+
+
+//320px
+@media(max-width: $small) {
+
+   .about{
+    .bannerImgDefault{
+        margin-top: 0;
+        width: 294px;
+    }
+
+        .boxAbout .list-cards {
+            width: 100%;
+        }
+
+   }
+
+
+}
+//375px
+@media(min-width: $medium) {
+
+    .about {
+        padding: 10px;
+        .bannerImgDefault {
+            margin-top: 0;
+            width: 100%;
+        }
+
+        .boxAbout .list-cards {
+            width: 100%;
+        }
+
+    }
+
+
+}
+
